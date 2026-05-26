@@ -4,9 +4,6 @@ function Header({ onToggle }) {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
-        <button className={styles.burgerBtn} onClick={onToggle} aria-label="Abrir menu">
-          <i className="ti ti-menu-2" />
-        </button>
         <a href="/" className={styles.brand}>
           <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
             <rect x="4" y="20" width="24" height="5" rx="2.5" fill="#92400E" />
@@ -22,10 +19,6 @@ function Header({ onToggle }) {
       </div>
  
       <div className={styles.right}>
-        <button className={styles.iconBtn} aria-label="Carrinho">
-          <i className="ti ti-shopping-cart" />
-          <span className={styles.badge} />
-        </button>
         <button className={styles.iconBtn} aria-label="Perfil">
           <i className="ti ti-user-circle" />
         </button>
